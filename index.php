@@ -12,14 +12,11 @@
         <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
         <?php
             function getConnectionWithAccessToken($oauth_token, $oauth_token_secret) {
-            $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $oauth_token, $oauth_token_secret);
-            return $connection;
+                $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $oauth_token, $oauth_token_secret);
+                return $connection;
             }
 
-            $connection = getConnectionWithAccessToken("455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI", "lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL");
-            $content = $connection->
 
-            get("statuses/home_timeline");
         ?>
     </head>
     <body>
@@ -34,7 +31,12 @@
                 <span class="title">#trending<span class="titleColourEdit">Where?</span></span>
                     <br>
                     <span class="subtitle">
-                        Sign in using your twitter account and explore the trending topics<br> of cities around the world!
+                        <?php
+                        $connection = getConnectionWithAccessToken("455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI", "lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL");
+                        $content = $connection->
+
+                        get("statuses/home_timeline");
+                        ?>
                     </span>
                     <br>
                     <br>
