@@ -25,7 +25,7 @@
                     <br>
                     <span class="subtitle">
                         <?php
-                        require('TwitterOAuth.php'); // path to twitteroauth library
+                        require('twitteroauth.php'); // path to twitteroauth library
 
                         $consumerkey = 'OAtCFNvjagzQCoHp5sJU2KtuE';
                         $consumersecret = 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ';
