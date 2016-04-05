@@ -12,7 +12,7 @@
         <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
         <?php
             function getConnectionWithAccessToken($oauth_token, $oauth_token_secret) {
-                $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $oauth_token, $oauth_token_secret);
+                $connection = new TwitterOAuth("OAtCFNvjagzQCoHp5sJU2KtuE","CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ", $oauth_token, $oauth_token_secret);
                 return $connection;
             }
 
