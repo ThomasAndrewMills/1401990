@@ -10,6 +10,17 @@
         <script src="map.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
+        <?php
+            function getConnectionWithAccessToken($oauth_token, $oauth_token_secret) {
+            $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $oauth_token, $oauth_token_secret);
+            return $connection;
+            }
+
+            $connection = getConnectionWithAccessToken("455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI", "lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL");
+            $content = $connection->
+
+            get("statuses/home_timeline");
+        ?>
     </head>
     <body>
         <div id="overlay">
