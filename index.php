@@ -25,13 +25,17 @@
                     <br>
                     <span class="subtitle">
                         <?php
-                        function getConnectionWithAccessToken($oauth_token, $oauth_token_secret) {
-                            $connection = new TwitterOAuth("OAtCFNvjagzQCoHp5sJU2KtuE","CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ", $oauth_token, $oauth_token_secret);
-                            return $connection;
-                        }
+                        require('TwitterOAuth.php'); // path to twitteroauth library
 
-                        //$connection = getConnectionWithAccessToken("abcdefg", "hijklmnop");
-                        //$content = $connection->get("statuses/home_timeline");
+                        $consumerkey = 'OAtCFNvjagzQCoHp5sJU2KtuE';
+                        $consumersecret = 'CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ';
+                        $accesstoken = '	455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI';
+                        $accesstokensecret = '	lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL';
+
+                        $twitter = new TwitterOAuth($consumerkey, $consumersecret, $accesstoken, $accesstokensecret);
+
+                        $tweets = $twitter->get('https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=craigbuckler&count=10');
+                        print_r($tweets);
                         ?>
                     </span>
                     <br>
