@@ -30,8 +30,8 @@
                             return $connection;
                         }
 
-                        $connection = getConnectionWithAccessToken("abcdefg", "hijklmnop");
-                        $content = $connection->get("statuses/home_timeline");
+                        //$connection = getConnectionWithAccessToken("abcdefg", "hijklmnop");
+                        //$content = $connection->get("statuses/home_timeline");
                         ?>
                     </span>
                     <br>
