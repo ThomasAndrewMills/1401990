@@ -129,9 +129,7 @@ html, body {
     height: 400px;
     max-width: none;
 }
-#map-canvas img {
-    max-width: none !important;
-}
+
 .gm-style-iw {
     width: 500px !important;
     top: 15px !important;
@@ -164,4 +162,3 @@ html, body {
     overflow-y: auto;
     overflow-x: hidden;
 }
-
