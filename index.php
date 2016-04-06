@@ -34,8 +34,8 @@
                         // Post the status message
                         //$connection->post('statuses/update', array('status' => "this is a test!"));
                         $content = $connection->get('statuses/mentions_timeline');
-                        $json_output = json_decode($content);
-                        echo($json_output."aberdeen");
+                        console.log($content);
+
 
 
                         ?>
