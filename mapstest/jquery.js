@@ -25,7 +25,7 @@ function initialize() {
 
         // Assign a maximum value for the width of the infowindow allows
         // greater control over the various content elements
-        maxWidth: 350
+        maxWidth: 500
     });
 
     // marker options
@@ -86,11 +86,6 @@ function initialize() {
 
         // Apply the desired effect to the close button
         iwCloseBtn.css({opacity: '1', right: '10px', top: '3px', border: '7px solid black', 'border-radius': '13px', 'box-shadow': '0 0 5px #3990B9'});
-
-        // If the content of infowindow not exceed the set maximum height, then the gradient is removed.
-        if($('.iw-content').height() < 140){
-            $('.iw-bottom-gradient').css({display: 'none'});
-        }
 
         // The API automatically applies 0.7 opacity to the button after the mouseout event. This function reverses this event to the desired value.
         iwCloseBtn.mouseout(function(){
