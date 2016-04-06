@@ -34,7 +34,7 @@
                         // Post the status message
                         //$connection->post('statuses/update', array('status' => "this is a test!"));
                         $content = $connection->get('statuses/mentions_timeline');
-                        echo($content);
+                        echo($content[0]);
 
                         ?>
                     </span>
