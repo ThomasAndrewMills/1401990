@@ -29,7 +29,7 @@
 
                         use Abraham\TwitterOAuth\TwitterOAuth;
 
-                        $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE','CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ', $access_token, $access_token_secret);
+                        $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE','CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ','455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI','lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL');
                         $content = $connection->get("account/verify_credentials");
 
                         $tweets = $connection->get("https://api.twitter.com/1.1/trends/23424977.json");
