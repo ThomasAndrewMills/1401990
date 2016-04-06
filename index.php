@@ -2,14 +2,17 @@
 <html>
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script type="text/javascript" src="map.js"></script>
+        <script src="map.js"></script>
         <title>
             trendingWhere?
         </title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20&sensor=false"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPq8HpLPgbIWth84LJfbbR4jsCJkrasuc&libraries=visualization&callback=initMap">
+        </script>
+
 
         <script>
             $(document).ready(function(){
@@ -18,9 +21,13 @@
                     $('#mainMenu').hide();
                 });
             });
+
+            $(document).ready(function(){
+
+            });
+
+
         </script>
-
-
     </head>
     <body>
         <div id="overlay">
