@@ -31,6 +31,8 @@
 
                         $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE','CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ', $access_token, $access_token_secret);
                         $content = $connection->get("account/verify_credentials");
+
+                        $myText = (string)$content;
                         echo(gettype($content));
                         ?>
                     </span>
