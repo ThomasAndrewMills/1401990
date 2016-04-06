@@ -1,8 +1,7 @@
 <!--DARREN WILLIAMSON, THOMAS MILLS, CALLUM MELIA, CALLUM ROBERTSON, CIARAN MILLER-->
 <html>
     <head>
-        <script src="map.js">
-        </script>
+        <script src="map.js"></script>
         <title>trendingWhere?</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script async defer
@@ -34,8 +33,7 @@
                         $content = $connection->get("account/verify_credentials");
                         // Post the status message
                         //$connection->post('statuses/update', array('status' => "this is a test!"));
-                        $content = $connection->get('statuses/mentions_timeline');
-                        console.log("test");
+                        $content = $connection->get('trends/place','1');
 
 
 
