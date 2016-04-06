@@ -1,11 +1,6 @@
 <!--DARREN WILLIAMSON, THOMAS MILLS, CALLUM MELIA, CALLUM ROBERTSON, CIARAN MILLER-->
 <html>
     <head>
-        <title>trendingWhere?</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPq8HpLPgbIWth84LJfbbR4jsCJkrasuc&libraries=visualization&callback=initMap">
-        </script>
         <script>
             function initMap() {
                 var map = new google.maps.Map(document.getElementById('map'), {
@@ -24,6 +19,12 @@
                 });
             }
         </script>
+        <title>trendingWhere?</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPq8HpLPgbIWth84LJfbbR4jsCJkrasuc&libraries=visualization&callback=initMap">
+        </script>
+
         <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
 
