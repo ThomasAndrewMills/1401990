@@ -21,11 +21,7 @@ function initialize() {
 
     // A new Info Window is created and set content
     var infowindow = new google.maps.InfoWindow({
-        content: content,
-
-        // Assign a maximum value for the width of the infowindow allows
-        // greater control over the various content elements
-        maxWidth: 500
+        content: content
     });
 
     // marker options
