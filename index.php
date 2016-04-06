@@ -1,23 +1,7 @@
 <!--DARREN WILLIAMSON, THOMAS MILLS, CALLUM MELIA, CALLUM ROBERTSON, CIARAN MILLER-->
 <html>
     <head>
-        <script>
-            function initMap() {
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {lat: 0, lng: 0},
-                    disableDefaultUI: true,
-                    zoom: 3,
-                    styles: [{
-                        featureType: 'poi',
-                        stylers: [{ visibility: 'off' }]  // Turn off points of interest.
-                    }, {
-                        featureType: 'transit.station',
-                        stylers: [{ visibility: 'off' }]  // Turn off bus stations, train stations, etc.
-                    }],
-                    disableDoubleClickZoom: true
-
-                });
-            }
+        <script src="map.js">
         </script>
         <title>trendingWhere?</title>
         <link rel="stylesheet" type="text/css" href="style.css">
