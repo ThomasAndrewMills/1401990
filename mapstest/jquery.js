@@ -85,7 +85,7 @@ function initialize() {
         var iwCloseBtn = iwOuter.next();
 
         // Apply the desired effect to the close button
-        iwCloseBtn.css({opacity: '1', right: '40px', top: '3px', border: '7px solid black', 'border-radius': '13px', 'box-shadow': '0 0 5px black'});
+        iwCloseBtn.css({opacity: '1', right: '40px', top: '3px', border: '7px solid black', 'border-radius': '13px', 'box-shadow': '0 0 5px black',display: none});
 
         iw.CloseBtn.img.css({display:none});
 
