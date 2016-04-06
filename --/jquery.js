@@ -20,20 +20,20 @@ function initialize() {
                             'London' +
                         '</div>' +
                         '<div class="trendsGroup">' +
-                            '<div class="trend">ABERDEEN</div>' +
-                            '<div class="trend">ABERDEEN</div>' +
-                            '<div class="trend">ABERDEEN</div>' +
-                            '<div class="trend">ABERDEEN</div>' +
+                            '<div class="trend">Trend1</div>' +
+                            '<div class="trend">Trend2</div>' +
+                            '<div class="trend">Trend3</div>' +
+                            '<div class="trend">Trend4</div>' +
                         '</div>'+
                         '<div class="trendsGroup">' +
-                            '<div class="trend">ABERDEEN</div>' +
-                            '<div class="trend">ABERDEEN</div>' +
-                            '<div class="trend">ABERDEEN</div>' +
-                            '<div class="trend">ABERDEEN</div>' +
+                            '<div class="trend">Trend5</div>' +
+                            '<div class="trend">Trend6</div>' +
+                            '<div class="trend">Trend7</div>' +
+                            '<div class="trend">Trend8</div>' +
                         '</div>'+
                         '<div class="trendsGroup">' +
-                            '<div class="trend">ABERDEEN</div>' +
-                            '<div class="trend">ABERDEEN</div>' +
+                            '<div class="trend">Trend9</div>' +
+                            '<div class="trend">Trend10</div>' +
                         '</div>' +
                     '</div>'
                     ;
