@@ -34,7 +34,7 @@
 
                         $json = file_get_contents("https://api.twitter.com/1.1/statuses/home_timeline.json?count=25&exclude_replies=true");
 
-                        $decodedStuff = json_decode($json);
+                        $decodedStuff = (string)json_decode($json);
 
                         echo($decodedStuff);
 
