@@ -28,6 +28,7 @@ function initialize() {
                             '<div class="trend">ABERDEEN</div>' +
                             '<div class="trend">ABERDEEN</div>' +
                             '<div class="trend">ABERDEEN</div>' +
+                        '</div>'+
                         '<div class="trendsGroup">' +
                             '<div class="trend">ABERDEEN</div>' +
                             '<div class="trend">ABERDEEN</div>' +
