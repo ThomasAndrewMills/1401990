@@ -34,7 +34,6 @@
 
 
 
-                        echo json_encode($content);
 
                         ?>
                     </span>
