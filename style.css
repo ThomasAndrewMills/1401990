@@ -126,14 +126,14 @@ html, body {
 #map-canvas {
     margin: 0;
     padding: 0;
-    height: 550px;
+    height: 400px;
     max-width: none;
 }
 #map-canvas img {
     max-width: none !important;
 }
 .gm-style-iw {
-    width: 470px !important;
+    width: 200px !important;
     top: 15px !important;
     left: 0px !important;
     background-color: #fff;
