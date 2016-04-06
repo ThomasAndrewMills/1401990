@@ -25,7 +25,7 @@ function initialize() {
     // InfoWindow content
     var content =       '<div class="trendsMenuContainer">' +
                         '<div class="cityTitle">' +
-                            'London' +
+                            'Glasgow' +
                         '</div>' +
                         '<div class="trendsGroup">' +
                             '<div class="trend">Trend1</div>' +
