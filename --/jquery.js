@@ -1,8 +1,8 @@
 // map center
-var center = new google.maps.LatLng(30, -40);
+var center = new google.maps.LatLng(51.507351,-0.127758);
 
 // marker position
-var factory = new google.maps.LatLng(30, -40);
+var factory = new google.maps.LatLng(51.507351,-0.127758);
 
 function initialize() {
     var mapOptions = {
@@ -43,7 +43,7 @@ function initialize() {
     var marker = new google.maps.Marker({
         position: factory,
         map: map,
-        title:"Porcelain Factory of Vista Alegre"
+        title:"London"
     });
 
     // This event expects a click on a marker
