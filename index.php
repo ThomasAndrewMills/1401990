@@ -18,6 +18,7 @@
                 $("#para1").click(function(){
                     $("#para1").html("<p>I've been clicked</p>");
                     $('#overlay').hide();
+                    $('#mainMenu').hide();
                 });
             });
 
