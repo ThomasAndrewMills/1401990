@@ -85,7 +85,7 @@ function initialize() {
         var iwCloseBtn = iwOuter.next();
 
         // Apply the desired effect to the close button
-        iwCloseBtn.css({opacity: '1', right: '50px', top: '3px', border: '7px solid black', 'border-radius': '13px', 'box-shadow': '0 0 5px #3990B9'});
+        iwCloseBtn.css({opacity: '1', right: '10px', top: '3px', border: '7px solid black', 'border-radius': '13px', 'box-shadow': '0 0 5px #3990B9'});
 
         // If the content of infowindow not exceed the set maximum height, then the gradient is removed.
         if($('.iw-content').height() < 140){
