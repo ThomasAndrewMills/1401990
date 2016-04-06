@@ -17,11 +17,12 @@
             $(document).ready(function(){
                 $("#para1").click(function(){
                     $("#para1").html("<p>I've been clicked</p>");
+                    $('#overlay').hide();
                 });
             });
 
             $(document).ready(function(){
-                $('#overlay').hide();
+
             });
 
 
