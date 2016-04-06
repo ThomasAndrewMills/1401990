@@ -18,7 +18,6 @@ function initialize() {
         '<div class="iw-title">' +
             'London' +
         '</div>' +
-        '<div class="iw-content">' +
             '<div class="trendsGroup">' +
                 '<div class="trend">ABERDEEN</div>' +
                 '<div class="trend">ABERDEEN</div>' +
@@ -33,8 +32,7 @@ function initialize() {
             '<div class="trendsGroup">' +
                 '<div class="trend">ABERDEEN</div>' +
                 '<div class="trend">ABERDEEN</div>' +
-            '</div>' +
-        '</div>'
+            '</div>'
         ;
 
     // A new Info Window is created and set content
