@@ -13,7 +13,7 @@ function initialize() {
 
     var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
 
-    
+
     // InfoWindow content
     var content =       '<div class=".cityTitle">' +
                             'London' +
