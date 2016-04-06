@@ -32,11 +32,10 @@
                         $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE','CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ', $access_token, $access_token_secret);
                         $content = $connection->get("account/verify_credentials");
 
-                        $json = file_get_contents("https://api.twitter.com/1.1/statuses/home_timeline.json?count=25&exclude_replies=true");
+                        $tweets = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=".$twitteruser."&count=".$notweets);
 
-                        $decodedStuff = (string)json_decode($json);
-
-                        echo($decodedStuff);
+                        echo json_encode($tweets);
+                        echo $tweets; //testing remove for production   
 
                         ?>
                     </span>
