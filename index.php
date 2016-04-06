@@ -15,7 +15,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
-                $("#para1").click(function(){
+                $(".signintwitter").click(function(){
                     $("#para1").html("<p>I've been clicked</p>");
                     $('#overlay').hide();
                     $('#mainMenu').hide();
