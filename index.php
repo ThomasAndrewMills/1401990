@@ -28,12 +28,14 @@
 
 
         </script>
+
+        <script type="text/javascript" src="jquery.js"></script>
     </head>
     <body>
         <div id="overlay">
 
         </div>
-        <div id="map">
+        <div id="map-canvas">
 
         </div>
         <div id="mainMenu">
