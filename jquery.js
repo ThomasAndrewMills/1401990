@@ -5,13 +5,21 @@ var center = new google.maps.LatLng(30, -40);
 var factory = new google.maps.LatLng(30, -40);
 
 function initialize() {
-    var mapOptions = {
-        center: center,
-        zoom: 16,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
 
-    var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: center,
+        disableDefaultUI: true,
+        zoom: 3,
+        styles: [{
+            featureType: 'poi',
+            stylers: [{ visibility: 'off' }]  // Turn off points of interest.
+        }, {
+            featureType: 'transit.station',
+            stylers: [{ visibility: 'off' }]  // Turn off bus stations, train stations, etc.
+        }],
+        disableDoubleClickZoom: true
+
+    });
 
     // InfoWindow content
     var content = '<div id="iw-container">' +
