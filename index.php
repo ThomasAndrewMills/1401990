@@ -32,8 +32,12 @@
                         $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE','CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ', $access_token, $access_token_secret);
                         $content = $connection->get("account/verify_credentials");
 
+                        $json = file_get_contents("https://api.twitter.com/1.1/statuses/home_timeline.json?count=25&exclude_replies=true");
+
+                        $decodedStuff = json_decode($json);
+
                         $myText = (string)$content;
-                        echo(gettype($content));
+                        echo($myText);
                         ?>
                     </span>
                     <br>
