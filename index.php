@@ -9,9 +9,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPq8HpLPgbIWth84LJfbbR4jsCJkrasuc&libraries=visualization&callback=initMap">
-        </script>
+
 
 
         <script>
