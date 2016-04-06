@@ -93,4 +93,5 @@ function initialize() {
         });
     });
 }
+$(".gm-style-iw").next("div").hide();
 google.maps.event.addDomListener(window, 'load', initialize);
