@@ -14,8 +14,7 @@ function initialize() {
     var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
 
     // InfoWindow content
-    var content =   '<div id="iw-container">' +
-                        '<div class="iw-title">' +
+    var content =       '<div class="iw-title">' +
                             'London' +
                         '</div>' +
                         '<div class="trendsGroup">' +
@@ -32,8 +31,7 @@ function initialize() {
                         '<div class="trendsGroup">' +
                             '<div class="trend">ABERDEEN</div>' +
                             '<div class="trend">ABERDEEN</div>' +
-                        '</div>' +
-                    '</div>'
+                        '</div>'
                     ;
 
     // A new Info Window is created and set content
