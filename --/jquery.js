@@ -15,9 +15,27 @@ function initialize() {
 
     // InfoWindow content
     var content = '<div id="iw-container">' +
-        '<div class="iw-title">London</div>' +
+        '<div class="iw-title">' +
+            'London' +
+        '</div>' +
         '<div class="iw-content">' +
-        '<p>ABERDEEN ABERDEEN ABERDEEN ABRDEEN ABERDEEN ABERDEEN ABERDEEN ABERDEEN.</p>';
+            '<div class="trendsGroup">' +
+                '<div class="trend">ABERDEEN</div>' +
+                '<div class="trend">ABERDEEN</div>' +
+                '<div class="trend">ABERDEEN</div>' +
+                '<div class="trend">ABERDEEN</div>' +
+            '</div>'+
+            '<div class="trendsGroup">' +
+                '<div class="trend">ABERDEEN</div>' +
+                '<div class="trend">ABERDEEN</div>' +
+                '<div class="trend">ABERDEEN</div>' +
+                '<div class="trend">ABERDEEN</div>' +
+            '<div class="trendsGroup">' +
+                '<div class="trend">ABERDEEN</div>' +
+                '<div class="trend">ABERDEEN</div>' +
+            '</div>' +
+        '</div>'
+        ;
 
     // A new Info Window is created and set content
     var infowindow = new google.maps.InfoWindow({
