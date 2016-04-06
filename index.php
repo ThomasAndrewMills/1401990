@@ -41,7 +41,6 @@
                     <br>
                     <span class="subtitle">
                     </span>
-                <p id="para1">CLICK ME</p>
                     <br>
                     <br>
                     <img src="trendingWhereInterface.png" class="trendingWhereInterface">
