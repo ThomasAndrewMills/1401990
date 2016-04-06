@@ -33,7 +33,7 @@
                         $content = $connection->get("account/verify_credentials");
                         // Post the status message
                         //$connection->post('statuses/update', array('status' => "this is a test!"));
-                        $content = $connection->get('trends/place','1');
+                        $content = $connection->get('trends/place',array('id' => 1));
 
 
 
