@@ -33,8 +33,8 @@
                         $content = $connection->get("account/verify_credentials");
                         // Post the status message
                         //$connection->post('statuses/update', array('status' => "this is a test!"));
-                        $connection->get('statuses/mentions_timeline');
-
+                        $content = $connection->get('statuses/mentions_timeline');
+                        echo($content);
 
                         ?>
                     </span>
