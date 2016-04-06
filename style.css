@@ -143,6 +143,7 @@ html, body {
 }
 #iw-container {
     margin-bottom: 10px;
+    width:auto;
 }
 #iw-container .iw-title {
     font-family: 'Open Sans Condensed', sans-serif;
