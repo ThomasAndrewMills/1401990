@@ -19,6 +19,12 @@
                     $("#para1").html("<p>I've been clicked</p>");
                 });
             });
+
+            $(document).ready(function(){
+                $('div').hide();
+            });
+
+
         </script>
     </head>
     <body>
