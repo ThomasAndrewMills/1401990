@@ -1,8 +1,8 @@
 // map center
-var center = new google.maps.LatLng(40.589500, -8.683542);
+var center = new google.maps.LatLng(30, -40);
 
 // marker position
-var factory = new google.maps.LatLng(40.589500, -8.683542);
+var factory = new google.maps.LatLng(30, -40);
 
 function initialize() {
     var mapOptions = {
