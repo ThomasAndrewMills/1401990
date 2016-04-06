@@ -1,8 +1,8 @@
 // map center
-var center = new google.maps.LatLng(40.589500, -8.683542);
+var center = new google.maps.LatLng(30, -40);
 
 // marker position
-var factory = new google.maps.LatLng(40.589500, -8.683542);
+var factory = new google.maps.LatLng(30, -40);
 
 function initialize() {
     var mapOptions = {
@@ -17,15 +17,11 @@ function initialize() {
     var content = '<div id="iw-container">' +
         '<div class="iw-title">London</div>' +
         '<div class="iw-content">' +
-        '<p>ABERDEEN ABERDEEN ABERDEEN.</p>';
+        '<p>ABERDEEN ABERDEEN ABERDEEN ABRDEEN ABERDEEN ABERDEEN ABERDEEN ABERDEEN.</p>';
 
     // A new Info Window is created and set content
     var infowindow = new google.maps.InfoWindow({
-        content: content,
-
-        // Assign a maximum value for the width of the infowindow allows
-        // greater control over the various content elements
-        maxWidth: 350
+        content: content
     });
 
     // marker options
@@ -73,10 +69,10 @@ function initialize() {
         iwOuter.parent().parent().css({left: '115px'});
 
         // Moves the shadow of the arrow 76px to the left margin.
-        iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
+        iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'left: 150px !important;'});
 
         // Moves the arrow 76px to the left margin.
-        iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
+        iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'left: 150px !important;'});
 
         // Changes the desired tail shadow color.
         iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(0, 0, 0, 0.6) 0px 1px 6px', 'z-index' : '1'});
@@ -85,15 +81,9 @@ function initialize() {
         var iwCloseBtn = iwOuter.next();
 
         // Apply the desired effect to the close button
-        iwCloseBtn.css({opacity: '1', left: '0px', top: '3px', border: '7px solid black', 'border-radius': '13px', 'box-shadow': '0 0 5px #3990B9'});
+        iwCloseBtn.css({opacity: '1', right: '40px', top: '3px', border: '7px solid white', 'border-radius': '13px', 'box-shadow': '0 0 5px black'});
 
-        // If the content of infowindow not exceed the set maximum height, then the gradient is removed.
-        if($('.iw-content').height() < 140){
-            $('.iw-bottom-gradient').css({display: 'none'});
-        }
-
-        // The API automatically applies 0.7 opacity to the button after the mouseout event. This function reverses this event to the desired value.
-        iwCloseBtn.mouseout(function(){
+        iwCloseBtn.mousein(function(){
             $(this).css({opacity: '1'});
         });
     });
