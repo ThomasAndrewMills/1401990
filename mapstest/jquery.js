@@ -15,7 +15,7 @@ function initialize() {
 
     // InfoWindow content
     var content = '<div id="iw-container">' +
-        '<div class="iw-title">TEST</div>' +
+        '<div class="iw-title">Porcelain Factory of Vista Alegre</div>' +
         '<div class="iw-content">' +
         '<div class="iw-subTitle">History</div>' +
         '<img src="http://maps.marnoto.com/en/5wayscustomizeinfowindow/images/vistalegre.jpg" alt="Porcelain Factory of Vista Alegre" height="115" width="83">' +
@@ -40,7 +40,7 @@ function initialize() {
     var marker = new google.maps.Marker({
         position: factory,
         map: map,
-        title:"test2"
+        title:"Porcelain Factory of Vista Alegre"
     });
 
     // This event expects a click on a marker
