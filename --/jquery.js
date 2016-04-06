@@ -14,7 +14,7 @@ function initialize() {
     var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
 
     // InfoWindow content
-    var content =       '<div class="iw-title">' +
+    var content =       '<div class=".cityTitle">' +
                             'London' +
                         '</div>' +
                         '<div class="trendsGroup">' +
