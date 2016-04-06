@@ -15,7 +15,7 @@ function initialize() {
 
     // InfoWindow content
     var content = '<div id="iw-container">' +
-        '<div class="iw-title">Porcelain Factory of Vista Alegre</div>';
+        '<div class="iw-title">London</div>';
 
     // A new Info Window is created and set content
     var infowindow = new google.maps.InfoWindow({
