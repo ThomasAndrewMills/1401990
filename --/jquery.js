@@ -14,27 +14,27 @@ function initialize() {
     var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
 
     // InfoWindow content
-    var content = '<div id="iw-container">' +
-        '<div class="iw-title">' +
-            'London' +
-        '</div>' +
-            '<div class="trendsGroup">' +
-                '<div class="trend">ABERDEEN</div>' +
-                '<div class="trend">ABERDEEN</div>' +
-                '<div class="trend">ABERDEEN</div>' +
-                '<div class="trend">ABERDEEN</div>' +
-            '</div>'+
-            '<div class="trendsGroup">' +
-                '<div class="trend">ABERDEEN</div>' +
-                '<div class="trend">ABERDEEN</div>' +
-                '<div class="trend">ABERDEEN</div>' +
-                '<div class="trend">ABERDEEN</div>' +
-            '<div class="trendsGroup">' +
-                '<div class="trend">ABERDEEN</div>' +
-                '<div class="trend">ABERDEEN</div>' +
-            '</div>' +
-        '</div>'
-        ;
+    var content =   '<div id="iw-container">' +
+                        '<div class="iw-title">' +
+                            'London' +
+                        '</div>' +
+                        '<div class="trendsGroup">' +
+                            '<div class="trend">ABERDEEN</div>' +
+                            '<div class="trend">ABERDEEN</div>' +
+                            '<div class="trend">ABERDEEN</div>' +
+                            '<div class="trend">ABERDEEN</div>' +
+                        '</div>'+
+                        '<div class="trendsGroup">' +
+                            '<div class="trend">ABERDEEN</div>' +
+                            '<div class="trend">ABERDEEN</div>' +
+                            '<div class="trend">ABERDEEN</div>' +
+                            '<div class="trend">ABERDEEN</div>' +
+                        '<div class="trendsGroup">' +
+                            '<div class="trend">ABERDEEN</div>' +
+                            '<div class="trend">ABERDEEN</div>' +
+                        '</div>' +
+                    '</div>'
+                    ;
 
     // A new Info Window is created and set content
     var infowindow = new google.maps.InfoWindow({
