@@ -18,7 +18,6 @@ function initialize() {
         '<div class="iw-title">London</div>' +
         '<div class="iw-content">' +
         '<div class="iw-subTitle">History</div>' +
-        '<img src="http://maps.marnoto.com/en/5wayscustomizeinfowindow/images/vistalegre.jpg" alt="Porcelain Factory of Vista Alegre" height="115" width="83">' +
         '<p>ABERDEEN ABERDEEN ABERDEEN Porcelain Factory of Vista Alegre was the first industrial unit dedicated to porcelain production in Portugal. For the foundation and success of this risky industrial development was crucial the spirit of persistence of its founder, José Ferreira Pinto Basto. Leading figure in Portuguese society of the nineteenth century farm owner, daring dealer, wisely incorporated the liberal ideas of the century, having become "the first example of free enterprise" in Portugal.</p>';
 
     // A new Info Window is created and set content
