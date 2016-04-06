@@ -83,9 +83,6 @@ function initialize() {
         // Apply the desired effect to the close button
         iwCloseBtn.css({opacity: '1', right: '40px', top: '3px', border: '7px solid white', 'border-radius': '13px', 'box-shadow': '0 0 5px black'});
 
-
-
-        // The API automatically applies 0.7 opacity to the button after the mouseout event. This function reverses this event to the desired value.
         iwCloseBtn.mousein(function(){
             $(this).css({opacity: '1'});
         });
