@@ -7,7 +7,7 @@ var factory = new google.maps.LatLng(51.507351,-0.127758);
 function initialize() {
     var mapOptions = {
         center: center,
-        zoom: 16,
+        zoom: 3,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
