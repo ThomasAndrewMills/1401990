@@ -2,15 +2,24 @@
 <html>
     <head>
         <script src="map.js"></script>
-        <title>trendingWhere?</title>
+        <title>
+            trendingWhere?
+        </title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPq8HpLPgbIWth84LJfbbR4jsCJkrasuc&libraries=visualization&callback=initMap">
         </script>
 
-        <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
-
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#para1").click(function(){
+                    $("#para1").html("<p>I've been clicked</p>");
+                });
+            });
+        </script>
     </head>
     <body>
         <div id="overlay">
@@ -24,21 +33,8 @@
                 <span class="title">#trending<span class="titleColourEdit">Where?</span></span>
                     <br>
                     <span class="subtitle">
-                        <?php
-                        require "twitteroauth/autoload.php";
-
-                        use Abraham\TwitterOAuth\TwitterOAuth;
-
-                        $connection = new TwitterOAuth('OAtCFNvjagzQCoHp5sJU2KtuE','CXHT54PYFdFugE6LKaqvVhUeFRZr8BVhZyHN8iGEsZmfqBlBBZ','455303569-USh4o67B8c6vYzw8taIp4G6WtjQoxpMOS8rseRNI','lIrlNxvTW6TY5DBUJmn7VuiWlMtAPz4tUrLE5ngUpENRL');
-                        $content = $connection->get("account/verify_credentials");
-                        // Post the status message
-                        //$connection->post('statuses/update', array('status' => "this is a test!"));
-                        $content = $connection->get('trends/place',array('id' => 1));
-
-
-
-                        ?>
                     </span>
+                <p id="para1">CLICK ME</p>
                     <br>
                     <br>
                     <img src="trendingWhereInterface.png" class="trendingWhereInterface">
