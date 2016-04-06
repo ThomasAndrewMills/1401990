@@ -36,8 +36,8 @@
 
                         $decodedStuff = json_decode($json);
 
-                        $myText = (string)$content;
-                        echo($myText);
+                        echo("test");
+
                         ?>
                     </span>
                     <br>
