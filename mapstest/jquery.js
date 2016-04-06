@@ -40,7 +40,7 @@ function initialize() {
     var marker = new google.maps.Marker({
         position: factory,
         map: map,
-        title:"Porcelain Factory of Vista Alegre"
+        title:"test2"
     });
 
     // This event expects a click on a marker
