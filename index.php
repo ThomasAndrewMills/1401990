@@ -251,7 +251,7 @@
                                 for (var i=0; i < trends.length;i++){
 
                                 }
-                                $(obj.responseJSON[0].trends[11].name).appendTo('#menuItem1');
+                                $('HELLO').appendTo('#menuItem1');
 
                             });
                         });
