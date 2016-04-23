@@ -35,7 +35,7 @@
                                 $(".signintwitter").click(function(){
 //                              $('#overlay').hide();
 //                              $('#mainMenu').hide();
-                                    console.log(obj.responseJSON[0].trends[0]);
+                                    console.log(obj.responseJSON[0].trends[0].name);
                                 });
                             });
 
