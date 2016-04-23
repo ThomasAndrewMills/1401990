@@ -39,7 +39,7 @@
                                 $(".signintwitter").click(function(){
 //                              $('#overlay').hide();
 //                              $('#mainMenu').hide();
-                                console.log(obj.contributors_enabled);
+                                console.log(obj.id);
                                 });
                             });
 
