@@ -15,7 +15,7 @@ $config = array(
     'oauth_access_token_secret' => 'BVlOv6tudRAG0XAcQFyG0pHbh3QuNbSbRpUge5CImQLH7',
     'consumer_key' => '5sQNx9gyazKXpyY6VPWO3hfRo',
     'consumer_secret' => '8EJRCn6Naln2SQl3YlmpYYNsXmbFXtqyBTYmt1QfXc5L35dzJ5',
-    'use_whitelist' => true, // If you want to only allow some requests to use this script.
+    'use_whitelist' => false, // If you want to only allow some requests to use this script.
     'base_url' => 'https://api.twitter.com/1.1/'
 );
 
