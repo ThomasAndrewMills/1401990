@@ -251,7 +251,7 @@
                                 for (var i=0; i < trends.length;i++){
 
                                 }
-                                $(obj.responseJSON[0].trends[11].name).appendTo('.subtitle');
+                                $(obj.responseJSON[0].trends[11].name).appendTo('#menuItem1');
 
                             });
                         });
