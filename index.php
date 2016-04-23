@@ -41,7 +41,7 @@
                                 $(".signintwitter").click(function(){
                                     $('#overlay').hide();
                                     $('#mainMenu').hide();
-                                    console.log(obj.responseJSON[0].trends[0].name);
+                                    console.log(obj.trends[0].name);
                                     console.log(obj.responseJSON[0].trends[1].name);
                                     console.log(obj.responseJSON[0].trends[2].name);
                                     console.log(obj.responseJSON[0].trends[3].name);
