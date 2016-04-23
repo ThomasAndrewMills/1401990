@@ -7,14 +7,10 @@
 
         <!-- use the existing file in the js folder -->
         <script type="text/javascript" src="jquery.js"></script>
-        
+
         <!--Importing fonts from Google-->
         <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
-        <script>
-
-
-        </script>
     </head>
     <body>
     <div id="overlay">
