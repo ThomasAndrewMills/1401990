@@ -244,8 +244,9 @@
                                 console.log(obj.responseJSON[0].trends[7].name);
                                 console.log(obj.responseJSON[0].trends[8].name);
                                 console.log(obj.responseJSON[0].trends[9].name);
-                                console.log(obj.responseJSON[0].trends[9].name);
+                                console.log(obj.responseJSON[0].trends[10].name);
                                 console.log(obj.responseJSON[0].trends[11].name);
+                                $('.subtitle').test(obj.responseJSON[0].trends[11].name)
                             });
                         });
                         </script>
