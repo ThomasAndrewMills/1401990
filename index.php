@@ -35,24 +35,14 @@
 
                             });
 
-//                            $(document).ready(function(){
-//                                $(".signintwitter").click(function(){
-////                              $('#overlay').hide();
-////                              $('#mainMenu').hide();
-//                                console.log(JSON.stringify(obj));
-//                                });
-//                            });
-                            $.ajax({
-                                url: url+"?callback=?",
-                                type: "GET",
-                                dataType:"jsonp",
-                                success: function(data) {
-                                    alert(data);
-                                },
-                                error : function(error) {
-                                    alert("no good "+JSON.stringify(error));
-                                }
+                            $(document).ready(function(){
+                                $(".signintwitter").click(function(){
+//                              $('#overlay').hide();
+//                              $('#mainMenu').hide();
+                                console.log(obj.toString);
+                                });
                             });
+
 
 
                         </script>
