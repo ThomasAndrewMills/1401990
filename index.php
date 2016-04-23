@@ -249,8 +249,9 @@
                                 var trends = document.getElementsByClassName('subtitle');
 
                                 for (var i=0; i < trends.length;i++){
-                                    trends[i].text = obj.responseJSON[0].trends[11].name;
+
                                 }
+                                $(obj.responseJSON[0].trends[11].name).appendTo('.subtitle');
 
                             });
                         });
