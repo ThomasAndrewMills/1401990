@@ -8,7 +8,7 @@
 
 // The tokens, keys and secrets from the app you created at https://dev.twitter.com/apps
 $config = array(
-    'oauth_access_token' => '455303569-C4ccRlTcSrfgo9fLwyZ1t7imX5z6zeXiMT4pnC9j',
+    'oauth_access_token' => '1455303569-C4ccRlTcSrfgo9fLwyZ1t7imX5z6zeXiMT4pnC9j',
     'oauth_access_token_secret' => 'BVlOv6tudRAG0XAcQFyG0pHbh3QuNbSbRpUge5CImQLH7',
     'consumer_key' => '5sQNx9gyazKXpyY6VPWO3hfRo',
     'consumer_secret' => '8EJRCn6Naln2SQl3YlmpYYNsXmbFXtqyBTYmt1QfXc5L35dzJ5',
