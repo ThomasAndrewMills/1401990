@@ -33,10 +33,9 @@
                                 $(".signintwitter").click(function(){
 //                              $('#overlay').hide();
 //                              $('#mainMenu').hide();
-                                console.log(JSON.stringify(obj));
                                 });
                             });
-
+                            console.log(obj.readyState);
 
 
                         </script>
