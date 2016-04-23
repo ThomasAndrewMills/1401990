@@ -246,12 +246,8 @@
                                 console.log(obj.responseJSON[0].trends[9].name);
                                 console.log(obj.responseJSON[0].trends[10].name);
                                 console.log(obj.responseJSON[0].trends[11].name);
-                                var trends = document.getElementsByClassName('subtitle');
 
-                                for (var i=0; i < trends.length;i++){
-
-                                }
-                                $('HELLO').appendTo('#menuItem1');
+                                $('<p>Text</p>').appendTo('.subtitle');
 
                             });
                         });
