@@ -206,24 +206,24 @@
 
                     iwCloseBtn.css({opacity: '1', right: '40px', top: '3px', border: '7px solid white', 'border-radius': '13px', 'box-shadow': '0 0 5px black'});
                 });
-                var obj = $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('trends/place.json?id=1'), function(result){   });
-                console.log(obj.responseJSON[0].trends[0].name);
-                console.log(obj.responseJSON[0].trends[1].name);
-                console.log(obj.responseJSON[0].trends[2].name);
-                console.log(obj.responseJSON[0].trends[3].name);
-                console.log(obj.responseJSON[0].trends[4].name);
-                console.log(obj.responseJSON[0].trends[5].name);
-                console.log(obj.responseJSON[0].trends[6].name);
-                console.log(obj.responseJSON[0].trends[7].name);
-                console.log(obj.responseJSON[0].trends[8].name);
-                console.log(obj.responseJSON[0].trends[9].name);
-                console.log(obj.responseJSON[0].trends[10].name);
-                console.log(obj.responseJSON[0].trends[11].name);
-                $('.trend').text(obj.responseJSON[0].trends[0].name);
+
             }
             google.maps.event.addDomListener(window, 'load', initialize);
 
-
+            var obj = $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('trends/place.json?id=1'), function(result){   });
+            console.log(obj.responseJSON[0].trends[0].name);
+            console.log(obj.responseJSON[0].trends[1].name);
+            console.log(obj.responseJSON[0].trends[2].name);
+            console.log(obj.responseJSON[0].trends[3].name);
+            console.log(obj.responseJSON[0].trends[4].name);
+            console.log(obj.responseJSON[0].trends[5].name);
+            console.log(obj.responseJSON[0].trends[6].name);
+            console.log(obj.responseJSON[0].trends[7].name);
+            console.log(obj.responseJSON[0].trends[8].name);
+            console.log(obj.responseJSON[0].trends[9].name);
+            console.log(obj.responseJSON[0].trends[10].name);
+            console.log(obj.responseJSON[0].trends[11].name);
+            $('.trend').text(obj.responseJSON[0].trends[0].name);
 
 
         </script>
