@@ -8,7 +8,6 @@
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20"></script>
 
         <script>
-            var obj = $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('trends/place.json?id=1'), function(result){   });
             //defining the center of the map
             var center = new google.maps.LatLng(55.864237,-4.251806);
 
@@ -209,23 +208,6 @@
                 });
             }
             google.maps.event.addDomListener(window, 'load', initialize);
-
-
-            $(document).ready(function(){
-                console.log(obj.responseJSON[0].trends[0].name);
-                console.log(obj.responseJSON[0].trends[1].name);
-                console.log(obj.responseJSON[0].trends[2].name);
-                console.log(obj.responseJSON[0].trends[3].name);
-                console.log(obj.responseJSON[0].trends[4].name);
-                console.log(obj.responseJSON[0].trends[5].name);
-                console.log(obj.responseJSON[0].trends[6].name);
-                console.log(obj.responseJSON[0].trends[7].name);
-                console.log(obj.responseJSON[0].trends[8].name);
-                console.log(obj.responseJSON[0].trends[9].name);
-                console.log(obj.responseJSON[0].trends[10].name);
-                console.log(obj.responseJSON[0].trends[11].name);
-                $('.trend').text(obj.responseJSON[0].trends[0].name);
-            });
         </script>
 
 
@@ -251,12 +233,28 @@
                 <br>
                     <span class="subtitle">
                         <script>
+                            var str = "";
+                            var obj = $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('trends/place.json?id=1'), function(result){
 
+                            });
 
                             $(document).ready(function(){
                                 $(".signintwitter").click(function(){
                                     $('#overlay').hide();
                                     $('#mainMenu').hide();
+                                    console.log(obj.responseJSON[0].trends[0].name);
+                                    console.log(obj.responseJSON[0].trends[1].name);
+                                    console.log(obj.responseJSON[0].trends[2].name);
+                                    console.log(obj.responseJSON[0].trends[3].name);
+                                    console.log(obj.responseJSON[0].trends[4].name);
+                                    console.log(obj.responseJSON[0].trends[5].name);
+                                    console.log(obj.responseJSON[0].trends[6].name);
+                                    console.log(obj.responseJSON[0].trends[7].name);
+                                    console.log(obj.responseJSON[0].trends[8].name);
+                                    console.log(obj.responseJSON[0].trends[9].name);
+                                    console.log(obj.responseJSON[0].trends[10].name);
+                                    console.log(obj.responseJSON[0].trends[11].name);
+                                    $('.trend').text(obj.responseJSON[0].trends[0].name);
                                 });
                             });
                         </script>
