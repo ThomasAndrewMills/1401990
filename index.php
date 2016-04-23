@@ -3,7 +3,7 @@
         <!--CSS link-->
         <link rel="stylesheet" type="text/css" href="style.css">
         <!--Google Maps API link-->
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20&sensor=false"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20"></script>
 
         <!-- use the existing file in the js folder -->
         <script type="text/javascript" src="jquery.js"></script>
