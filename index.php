@@ -16,7 +16,7 @@
         <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
         <script>
 
-            
+
         </script>
     </head>
     <body>
@@ -32,7 +32,7 @@
                     <span class="subtitle">
                         <script>
                             var str = "";
-                            var obj = $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=MikeRogers0&count=2'), function(result){
+                            var obj = $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('trends/place.json?id="1"'), function(result){
 
                             });
 
