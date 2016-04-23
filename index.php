@@ -17,8 +17,9 @@
         <script>
             $(document).ready(function(){
                 $(".signintwitter").click(function(){
-                    $('#overlay').hide();
-                    $('#mainMenu').hide();
+//                    $('#overlay').hide();
+//                    $('#mainMenu').hide();
+                    console.log("test");
 
                 });
             });
