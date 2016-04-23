@@ -247,7 +247,7 @@
                                 console.log(obj.responseJSON[0].trends[10].name);
                                 console.log(obj.responseJSON[0].trends[11].name);
 
-                                var a = obj.responseJSON[0].trends[0].name
+                                var a = obj.responseJSON[0].trends[0].name;
                                 $(a).appendTo('.subtitle');
 
                             });
