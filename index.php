@@ -35,6 +35,11 @@
                 <span class="title">#trending<span class="titleColourEdit">Where?</span></span>
                 <br>
                     <span class="subtitle">
+                        <script>
+                            $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=MikeRogers0&count=2'), function(d){
+                                // Some magic here
+                            }
+                        </script>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
                     </span>
                 <br>
