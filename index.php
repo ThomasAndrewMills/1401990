@@ -36,6 +36,17 @@
 //                              $('#overlay').hide();
 //                              $('#mainMenu').hide();
                                     console.log(obj.responseJSON[0].trends[0].name);
+                                    console.log(obj.responseJSON[0].trends[1].name);
+                                    console.log(obj.responseJSON[0].trends[2].name);
+                                    console.log(obj.responseJSON[0].trends[3].name);
+                                    console.log(obj.responseJSON[0].trends[4].name);
+                                    console.log(obj.responseJSON[0].trends[5].name);
+                                    console.log(obj.responseJSON[0].trends[6].name);
+                                    console.log(obj.responseJSON[0].trends[7].name);
+                                    console.log(obj.responseJSON[0].trends[8].name);
+                                    console.log(obj.responseJSON[0].trends[9].name);
+                                    console.log(obj.responseJSON[0].trends[9].name);
+                                    console.log(obj.responseJSON[0].trends[11].name);
                                 });
                             });
 
