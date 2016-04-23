@@ -1,6 +1,12 @@
 <html>
     <head>
 
+        <!--Google CDN-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+        <!--Google Maps API link-->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20"></script>
+        
         <script>
             //defining the center of the map
             var center = new google.maps.LatLng(55.864237,-4.251806);
@@ -207,10 +213,9 @@
 
         <!--CSS link-->
         <link rel="stylesheet" type="text/css" href="style.css">
-        <!--Google Maps API link-->
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20"></script>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+
+
 
         <!--Importing fonts from Google-->
         <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
