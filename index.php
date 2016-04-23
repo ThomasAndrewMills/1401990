@@ -27,10 +27,10 @@
                     <span class="subtitle">
                         <script>
                             var str = "";
-                            var obj = $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('trends/place.json?id=1'), function(result){
+                            var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=1'), function (result) {
                             });
-                            $(document).ready(function(){
-                                $(".signintwitter").click(function(){
+                            $(document).ready(function () {
+                                $(".signintwitter").click(function () {
 //                              $('#overlay').hide();
 //                              $('#mainMenu').hide();
                                     console.log(obj.responseJSON[0].trends[0].name);
