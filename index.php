@@ -15,14 +15,7 @@
         <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
         <script>
-            $(document).ready(function(){
-                $(".signintwitter").click(function(){
-//                    $('#overlay').hide();
-//                    $('#mainMenu').hide();
 
-
-                });
-            });
         </script>
     </head>
     <body>
@@ -42,7 +35,14 @@
 
                             });
 
-                            console.log(JSON.stringify(obj));
+                            $(document).ready(function(){
+                                $(".signintwitter").click(function(){
+//                              $('#overlay').hide();
+//                              $('#mainMenu').hide();
+                                console.log(JSON.stringify(obj));
+                                });
+                            });
+
 
                         </script>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
