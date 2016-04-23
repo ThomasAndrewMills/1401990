@@ -32,8 +32,8 @@
                     <span class="subtitle">
                         <script>
                             var str = "";
-                            var obj = $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('trends/place.json?id="1"'), function(result){
-
+                            var obj = $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('trends/place.json?id=1'), function(result){
+                                
                             });
 
                             $(document).ready(function(){
