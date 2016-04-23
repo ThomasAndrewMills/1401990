@@ -247,7 +247,7 @@
                                 console.log(obj.responseJSON[0].trends[10].name);
                                 console.log(obj.responseJSON[0].trends[11].name);
 
-                                $('<p>Text</p>').appendTo('.subtitle');
+                                $('Text').appendTo('.subtitle');
 
                             });
                         });
