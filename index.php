@@ -36,10 +36,12 @@
                 <br>
                     <span class="subtitle">
                         <script>
+                            var str = "";
                             $.getJSON('/twitter-proxy.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=MikeRogers0&count=2'), function(d){
-                                var str = JSON.stringify(obj, null, 2); // spacing level = 2
-                                document.write(str);
+                                str = JSON.stringify(obj, null, 2); // spacing level = 2
+
                             })
+                            document.write(str);
                         </script>
                         Sign in using your twitter account and explore the trending topics<br> of cities around the world!
                     </span>
