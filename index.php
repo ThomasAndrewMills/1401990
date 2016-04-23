@@ -246,7 +246,12 @@
                                 console.log(obj.responseJSON[0].trends[9].name);
                                 console.log(obj.responseJSON[0].trends[10].name);
                                 console.log(obj.responseJSON[0].trends[11].name);
-                                $('.subtitle').test(obj.responseJSON[0].trends[11].name)
+                                var trends = document.getElementsByClassName('subtitle');
+
+                                for (var i=0; i < trends.length;i++){
+                                    trends[i].text = obj.responseJSON[0].trends[11].name;
+                                }
+
                             });
                         });
                         </script>
