@@ -140,7 +140,27 @@
                 });
 
                 //marker listeners
-                    google.maps.event.addListener(marker1, 'click', function () {
+
+
+
+
+
+
+                function onloadCall()
+                {
+
+                }
+
+                onloadCall();
+
+
+
+
+
+
+
+
+                google.maps.event.addListener(marker1, 'click', function () {
                         var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=1'), function (result) {
                         });
                         var a = obj.responseJSON[0].trends[0].name;
@@ -155,7 +175,39 @@
                         var j = obj.responseJSON[0].trends[9].name;
                         var k = obj.responseJSON[0].trends[10].name;
                         var l = obj.responseJSON[0].trends[11].name;
-                        $('.trend').append(a);
+
+                        //$('.trend').append(a);
+
+                        var divs = document.getElementsByClassName('trendsGroup');
+                        for(var z = 0; z < divs.length; z++) {
+                            var div = divs[z];
+                            if(!div) break;
+                            var span = div.getElementsByClassName('trend');
+                            if(trend[0].innerHTML == 'Trend1')
+                                trend[0].innerHTML=a;
+                            if(trend[1].innerHTML == 'Trend2')
+                                trend[1].innerHTML=b;
+                            if(trend[2].innerHTML == 'Trend3')
+                                trend[2].innerHTML=c;
+                            if(trend[3].innerHTML == 'Trend4')
+                                trend[3].innerHTML=d;
+                            if(trend[4].innerHTML == 'Trend5')
+                                trend[4].innerHTML=e;
+                            if(trend[5].innerHTML == 'Trend6')
+                                trend[5].innerHTML=f;
+                            if(trend[6].innerHTML == 'Trend7')
+                                trend[6].innerHTML=g;
+                            if(trend[7].innerHTML == 'Trend8')
+                                trend[7].innerHTML=h;
+                            if(trend[8].innerHTML == 'Trend9')
+                                trend[8].innerHTML=i;
+                            if(trend[9].innerHTML == 'Trend10')
+                                trend[9].innerHTML=j;
+                            if(trend[10].innerHTML == 'Trend11')
+                                trend[10].innerHTML=k;
+                            if(trend[11].innerHTML == 'Trend12')
+                                trend[11].innerHTML=l;
+                    }
                         infowindow.open(map, marker1);
                     });
 
@@ -243,26 +295,12 @@
                 <br>
                 <span class="subtitle">
                     <script>
-                        var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=1'), function (result) {
-                        });
+                        
                         $(document).ready(function () {
                             $(".signintwitter").click(function () {
                             $('#overlay').hide();
                             $('#mainMenu').hide();
-                                var a = obj.responseJSON[0].trends[0].name;
-                                var b = obj.responseJSON[0].trends[1].name;
-                                var c = obj.responseJSON[0].trends[2].name;
-                                var d = obj.responseJSON[0].trends[3].name;
-                                var e = obj.responseJSON[0].trends[4].name;
-                                var f = obj.responseJSON[0].trends[5].name;
-                                var g = obj.responseJSON[0].trends[6].name;
-                                var h = obj.responseJSON[0].trends[7].name;
-                                var i = obj.responseJSON[0].trends[8].name;
-                                var j = obj.responseJSON[0].trends[9].name;
-                                var k = obj.responseJSON[0].trends[10].name;
-                                var l = obj.responseJSON[0].trends[11].name;
 
-                                $('.trend').append(a);
 
                             });
                         });
