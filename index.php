@@ -204,7 +204,7 @@ console.log(a);
 
 
 
-                    });
+
 
 
                 google.maps.event.addListener(marker2, 'click', function() {
