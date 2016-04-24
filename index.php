@@ -232,8 +232,8 @@
                         });
                         $(document).ready(function () {
                             $(".signintwitter").click(function () {
-                            //$('#overlay').hide();
-                            //$('#mainMenu').hide();
+                            $('#overlay').hide();
+                            $('#mainMenu').hide();
                                 var a = obj.responseJSON[0].trends[0].name;
                                 var b = obj.responseJSON[0].trends[1].name;
                                 var c = obj.responseJSON[0].trends[2].name;
