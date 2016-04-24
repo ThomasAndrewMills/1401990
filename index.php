@@ -206,7 +206,7 @@
 
                         //$('.trend').append(a);
 
-                    console.log(a);
+                    
 
                     });
 
