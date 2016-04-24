@@ -135,6 +135,7 @@
                 //marker listeners
                 google.maps.event.addListener(marker1, 'click', function () {
                     var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=21125'), function (result) {
+
                         var a = obj.responseJSON[0].trends[0].name;
                         var b = obj.responseJSON[0].trends[1].name;
                         var c = obj.responseJSON[0].trends[2].name;
@@ -147,21 +148,29 @@
                         var j = obj.responseJSON[0].trends[9].name;
                         var k = obj.responseJSON[0].trends[10].name;
                         var l = obj.responseJSON[0].trends[11].name;
-                        console.log(obj.responseJSON[0].locations[0].name);
 
+
+
+                        //adding the city title to the pop-up menu
+                        var cityTitle = document.getElementsByClassName('cityTitle');
+                        cityTitle.innerHTML="obj.responseJSON[0].locations[0].name";
+
+                        //getting an array of the trend classes
                         var trend = document.getElementsByClassName('trend');
-                            trend[0].innerHTML=a;
-                            trend[1].innerHTML=b;
-                            trend[2].innerHTML=c;
-                            trend[3].innerHTML=d;
-                            trend[4].innerHTML=e;
-                            trend[5].innerHTML=f;
-                            trend[6].innerHTML=g;
-                            trend[7].innerHTML=h;
-                            trend[8].innerHTML=i;
-                            trend[9].innerHTML=j;
-                            trend[10].innerHTML=k;
-                            trend[11].innerHTML=l;
+                        
+                        //adding the trends to the pop-up menu
+                        trend[0].innerHTML=a;
+                        trend[1].innerHTML=b;
+                        trend[2].innerHTML=c;
+                        trend[3].innerHTML=d;
+                        trend[4].innerHTML=e;
+                        trend[5].innerHTML=f;
+                        trend[6].innerHTML=g;
+                        trend[7].innerHTML=h;
+                        trend[8].innerHTML=i;
+                        trend[9].innerHTML=j;
+                        trend[10].innerHTML=k;
+                        trend[11].innerHTML=l;
                         });
                     infowindow.open(map, marker1);
                 });
