@@ -146,12 +146,7 @@
 
 
 
-                function onloadCall()
-                {
-
-                }
-
-                onloadCall();
+                
 
 
 
@@ -295,7 +290,7 @@
                 <br>
                 <span class="subtitle">
                     <script>
-                        
+
                         $(document).ready(function () {
                             $(".signintwitter").click(function () {
                             $('#overlay').hide();
