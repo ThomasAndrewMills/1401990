@@ -86,8 +86,8 @@
                 //moscow	2122265
                 var city10 = new google.maps.LatLng(55.755826,37.6173);
 
-                //New Delhi	28743736
-                var city11 = new google.maps.LatLng(28.613939,77.209021);
+                //Los Angeles	2442047
+                var city11 = new google.maps.LatLng(34.052234,-118.243685);
 
 
                 // marker options
@@ -148,7 +148,7 @@
                 var marker11 = new google.maps.Marker({
                     position: city11,
                     map: map,
-                    title:"New Delhi"
+                    title:"Los Angeles"
                 });
 
                 //marker listeners
