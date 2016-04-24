@@ -174,6 +174,7 @@
 
                         //$('.trend').append(a);
 
+                    console.log(a);
                         var divs = document.getElementsByClassName('trendsGroup');
                         for(var z = 0; z < divs.length; z++) {
                             var div = divs[z];
