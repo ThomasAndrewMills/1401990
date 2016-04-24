@@ -135,22 +135,7 @@
                 //marker listeners
                 google.maps.event.addListener(marker1, 'click', function () {
                     var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=21125'), function (result) {
-
-                        var a = obj.responseJSON[0].trends[0].name;
-                        var b = obj.responseJSON[0].trends[1].name;
-                        var c = obj.responseJSON[0].trends[2].name;
-                        var d = obj.responseJSON[0].trends[3].name;
-                        var e = obj.responseJSON[0].trends[4].name;
-                        var f = obj.responseJSON[0].trends[5].name;
-                        var g = obj.responseJSON[0].trends[6].name;
-                        var h = obj.responseJSON[0].trends[7].name;
-                        var i = obj.responseJSON[0].trends[8].name;
-                        var j = obj.responseJSON[0].trends[9].name;
-                        var k = obj.responseJSON[0].trends[10].name;
-                        var l = obj.responseJSON[0].trends[11].name;
-
-
-
+                        
                         //adding the city title to the pop-up menu
                         var cityTitle = document.getElementsByClassName('cityTitle');
                         cityTitle[0].innerHTML=obj.responseJSON[0].locations[0].name;
@@ -158,19 +143,19 @@
                         //getting an array of the trend classes
                         var trend = document.getElementsByClassName('trend');
 
-                        //adding the trends to the pop-up menu
-                        trend[0].innerHTML=a;
-                        trend[1].innerHTML=b;
-                        trend[2].innerHTML=c;
-                        trend[3].innerHTML=d;
-                        trend[4].innerHTML=e;
-                        trend[5].innerHTML=f;
-                        trend[6].innerHTML=g;
-                        trend[7].innerHTML=h;
-                        trend[8].innerHTML=i;
-                        trend[9].innerHTML=j;
-                        trend[10].innerHTML=k;
-                        trend[11].innerHTML=l;
+                        //taking the data received in JSON and adding the trends to the pop-up menu
+                        trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
+                        trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
+                        trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
+                        trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
+                        trend[4].innerHTML= obj.responseJSON[0].trends[4].name;
+                        trend[5].innerHTML= obj.responseJSON[0].trends[5].name;
+                        trend[6].innerHTML= obj.responseJSON[0].trends[6].name;
+                        trend[7].innerHTML= obj.responseJSON[0].trends[7].name;
+                        trend[8].innerHTML= obj.responseJSON[0].trends[8].name;
+                        trend[9].innerHTML= obj.responseJSON[0].trends[9].name;
+                        trend[10].innerHTML= obj.responseJSON[0].trends[10].name;
+                        trend[11].innerHTML= obj.responseJSON[0].trends[11].name;
                         });
                     infowindow.open(map, marker1);
                 });
@@ -178,114 +163,256 @@
                 google.maps.event.addListener(marker3, 'click', function() {
                     var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=19344'), function (result) {
                         var a = obj.responseJSON[0].trends[0].name;
-                        var b = obj.responseJSON[0].trends[1].name;
-                        var c = obj.responseJSON[0].trends[2].name;
-                        var d = obj.responseJSON[0].trends[3].name;
-                        var e = obj.responseJSON[0].trends[4].name;
-                        var f = obj.responseJSON[0].trends[5].name;
-                        var g = obj.responseJSON[0].trends[6].name;
-                        var h = obj.responseJSON[0].trends[7].name;
-                        var i = obj.responseJSON[0].trends[8].name;
-                        var j = obj.responseJSON[0].trends[9].name;
-                        var k = obj.responseJSON[0].trends[10].name;
-                        var l = obj.responseJSON[0].trends[11].name;
+                        //adding the city title to the pop-up menu
+                        var cityTitle = document.getElementsByClassName('cityTitle');
+                        cityTitle[0].innerHTML=obj.responseJSON[0].locations[0].name;
 
+                        //getting an array of the trend classes
                         var trend = document.getElementsByClassName('trend');
-                            trend[0].innerHTML=a;
-                            trend[1].innerHTML=b;
-                            trend[2].innerHTML=c;
-                            trend[3].innerHTML=d;
-                            trend[4].innerHTML=e;
-                            trend[5].innerHTML=f;
-                            trend[6].innerHTML=g;
-                            trend[7].innerHTML=h;
-                            trend[8].innerHTML=i;
-                            trend[9].innerHTML=j;
-                            trend[10].innerHTML=k;
-                            trend[11].innerHTML=l;
+
+                        //taking the data received in JSON and adding the trends to the pop-up menu
+                        trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
+                        trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
+                        trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
+                        trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
+                        trend[4].innerHTML= obj.responseJSON[0].trends[4].name;
+                        trend[5].innerHTML= obj.responseJSON[0].trends[5].name;
+                        trend[6].innerHTML= obj.responseJSON[0].trends[6].name;
+                        trend[7].innerHTML= obj.responseJSON[0].trends[7].name;
+                        trend[8].innerHTML= obj.responseJSON[0].trends[8].name;
+                        trend[9].innerHTML= obj.responseJSON[0].trends[9].name;
+                        trend[10].innerHTML= obj.responseJSON[0].trends[10].name;
+                        trend[11].innerHTML= obj.responseJSON[0].trends[11].name;
                     });
                     infowindow.open(map,marker3);
                 });
 
                 google.maps.event.addListener(marker4, 'click', function() {
                     var obj = $.getJSON('/twitter-proxy.php?url=' + encodeURIComponent('trends/place.json?id=44418'), function (result) {
-                        var a = obj.responseJSON[0].trends[0].name;
-                        var b = obj.responseJSON[0].trends[1].name;
-                        var c = obj.responseJSON[0].trends[2].name;
-                        var d = obj.responseJSON[0].trends[3].name;
-                        var e = obj.responseJSON[0].trends[4].name;
-                        var f = obj.responseJSON[0].trends[5].name;
-                        var g = obj.responseJSON[0].trends[6].name;
-                        var h = obj.responseJSON[0].trends[7].name;
-                        var i = obj.responseJSON[0].trends[8].name;
-                        var j = obj.responseJSON[0].trends[9].name;
-                        var k = obj.responseJSON[0].trends[10].name;
-                        var l = obj.responseJSON[0].trends[11].name;
+                        //adding the city title to the pop-up menu
+                        var cityTitle = document.getElementsByClassName('cityTitle');
+                        cityTitle[0].innerHTML=obj.responseJSON[0].locations[0].name;
 
+                        //getting an array of the trend classes
                         var trend = document.getElementsByClassName('trend');
-                            trend[0].innerHTML=a;
-                            trend[1].innerHTML=b;
-                            trend[2].innerHTML=c;
-                            trend[3].innerHTML=d;
-                            trend[4].innerHTML=e;
-                            trend[5].innerHTML=f;
-                            trend[6].innerHTML=g;
-                            trend[7].innerHTML=h;
-                            trend[8].innerHTML=i;
-                            trend[9].innerHTML=j;
-                            trend[10].innerHTML=k;
-                            trend[11].innerHTML=l;
+
+                        //taking the data received in JSON and adding the trends to the pop-up menu
+                        trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
+                        trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
+                        trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
+                        trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
+                        trend[4].innerHTML= obj.responseJSON[0].trends[4].name;
+                        trend[5].innerHTML= obj.responseJSON[0].trends[5].name;
+                        trend[6].innerHTML= obj.responseJSON[0].trends[6].name;
+                        trend[7].innerHTML= obj.responseJSON[0].trends[7].name;
+                        trend[8].innerHTML= obj.responseJSON[0].trends[8].name;
+                        trend[9].innerHTML= obj.responseJSON[0].trends[9].name;
+                        trend[10].innerHTML= obj.responseJSON[0].trends[10].name;
+                        trend[11].innerHTML= obj.responseJSON[0].trends[11].name;
                     });
                     infowindow.open(map,marker4);
                 });
 
                 google.maps.event.addListener(marker5, 'click', function() {
+                    //adding the city title to the pop-up menu
+                    var cityTitle = document.getElementsByClassName('cityTitle');
+                    cityTitle[0].innerHTML=obj.responseJSON[0].locations[0].name;
+
+                    //getting an array of the trend classes
+                    var trend = document.getElementsByClassName('trend');
+
+                    //taking the data received in JSON and adding the trends to the pop-up menu
+                    trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
+                    trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
+                    trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
+                    trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
+                    trend[4].innerHTML= obj.responseJSON[0].trends[4].name;
+                    trend[5].innerHTML= obj.responseJSON[0].trends[5].name;
+                    trend[6].innerHTML= obj.responseJSON[0].trends[6].name;
+                    trend[7].innerHTML= obj.responseJSON[0].trends[7].name;
+                    trend[8].innerHTML= obj.responseJSON[0].trends[8].name;
+                    trend[9].innerHTML= obj.responseJSON[0].trends[9].name;
+                    trend[10].innerHTML= obj.responseJSON[0].trends[10].name;
+                    trend[11].innerHTML= obj.responseJSON[0].trends[11].name;
                     infowindow.open(map,marker5);
                 });
 
                 google.maps.event.addListener(marker6, 'click', function() {
+                    //adding the city title to the pop-up menu
+                    var cityTitle = document.getElementsByClassName('cityTitle');
+                    cityTitle[0].innerHTML=obj.responseJSON[0].locations[0].name;
+
+                    //getting an array of the trend classes
+                    var trend = document.getElementsByClassName('trend');
+
+                    //taking the data received in JSON and adding the trends to the pop-up menu
+                    trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
+                    trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
+                    trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
+                    trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
+                    trend[4].innerHTML= obj.responseJSON[0].trends[4].name;
+                    trend[5].innerHTML= obj.responseJSON[0].trends[5].name;
+                    trend[6].innerHTML= obj.responseJSON[0].trends[6].name;
+                    trend[7].innerHTML= obj.responseJSON[0].trends[7].name;
+                    trend[8].innerHTML= obj.responseJSON[0].trends[8].name;
+                    trend[9].innerHTML= obj.responseJSON[0].trends[9].name;
+                    trend[10].innerHTML= obj.responseJSON[0].trends[10].name;
+                    trend[11].innerHTML= obj.responseJSON[0].trends[11].name;
                     infowindow.open(map,marker6);
                 });
 
                 google.maps.event.addListener(marker7, 'click', function() {
+                    //adding the city title to the pop-up menu
+                    var cityTitle = document.getElementsByClassName('cityTitle');
+                    cityTitle[0].innerHTML=obj.responseJSON[0].locations[0].name;
+
+                    //getting an array of the trend classes
+                    var trend = document.getElementsByClassName('trend');
+
+                    //taking the data received in JSON and adding the trends to the pop-up menu
+                    trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
+                    trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
+                    trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
+                    trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
+                    trend[4].innerHTML= obj.responseJSON[0].trends[4].name;
+                    trend[5].innerHTML= obj.responseJSON[0].trends[5].name;
+                    trend[6].innerHTML= obj.responseJSON[0].trends[6].name;
+                    trend[7].innerHTML= obj.responseJSON[0].trends[7].name;
+                    trend[8].innerHTML= obj.responseJSON[0].trends[8].name;
+                    trend[9].innerHTML= obj.responseJSON[0].trends[9].name;
+                    trend[10].innerHTML= obj.responseJSON[0].trends[10].name;
+                    trend[11].innerHTML= obj.responseJSON[0].trends[11].name;
                     infowindow.open(map,marker7);
                 });
 
                 google.maps.event.addListener(marker8, 'click', function() {
+                    //adding the city title to the pop-up menu
+                    var cityTitle = document.getElementsByClassName('cityTitle');
+                    cityTitle[0].innerHTML=obj.responseJSON[0].locations[0].name;
+
+                    //getting an array of the trend classes
+                    var trend = document.getElementsByClassName('trend');
+
+                    //taking the data received in JSON and adding the trends to the pop-up menu
+                    trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
+                    trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
+                    trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
+                    trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
+                    trend[4].innerHTML= obj.responseJSON[0].trends[4].name;
+                    trend[5].innerHTML= obj.responseJSON[0].trends[5].name;
+                    trend[6].innerHTML= obj.responseJSON[0].trends[6].name;
+                    trend[7].innerHTML= obj.responseJSON[0].trends[7].name;
+                    trend[8].innerHTML= obj.responseJSON[0].trends[8].name;
+                    trend[9].innerHTML= obj.responseJSON[0].trends[9].name;
+                    trend[10].innerHTML= obj.responseJSON[0].trends[10].name;
+                    trend[11].innerHTML= obj.responseJSON[0].trends[11].name;
                     infowindow.open(map,marker8);
                 });
 
                 google.maps.event.addListener(marker9, 'click', function() {
+                    //adding the city title to the pop-up menu
+                    var cityTitle = document.getElementsByClassName('cityTitle');
+                    cityTitle[0].innerHTML=obj.responseJSON[0].locations[0].name;
+
+                    //getting an array of the trend classes
+                    var trend = document.getElementsByClassName('trend');
+
+                    //taking the data received in JSON and adding the trends to the pop-up menu
+                    trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
+                    trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
+                    trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
+                    trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
+                    trend[4].innerHTML= obj.responseJSON[0].trends[4].name;
+                    trend[5].innerHTML= obj.responseJSON[0].trends[5].name;
+                    trend[6].innerHTML= obj.responseJSON[0].trends[6].name;
+                    trend[7].innerHTML= obj.responseJSON[0].trends[7].name;
+                    trend[8].innerHTML= obj.responseJSON[0].trends[8].name;
+                    trend[9].innerHTML= obj.responseJSON[0].trends[9].name;
+                    trend[10].innerHTML= obj.responseJSON[0].trends[10].name;
+                    trend[11].innerHTML= obj.responseJSON[0].trends[11].name;
                     infowindow.open(map,marker9);
                 });
 
                 google.maps.event.addListener(marker10, 'click', function() {
+                    //adding the city title to the pop-up menu
+                    var cityTitle = document.getElementsByClassName('cityTitle');
+                    cityTitle[0].innerHTML=obj.responseJSON[0].locations[0].name;
+
+                    //getting an array of the trend classes
+                    var trend = document.getElementsByClassName('trend');
+
+                    //taking the data received in JSON and adding the trends to the pop-up menu
+                    trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
+                    trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
+                    trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
+                    trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
+                    trend[4].innerHTML= obj.responseJSON[0].trends[4].name;
+                    trend[5].innerHTML= obj.responseJSON[0].trends[5].name;
+                    trend[6].innerHTML= obj.responseJSON[0].trends[6].name;
+                    trend[7].innerHTML= obj.responseJSON[0].trends[7].name;
+                    trend[8].innerHTML= obj.responseJSON[0].trends[8].name;
+                    trend[9].innerHTML= obj.responseJSON[0].trends[9].name;
+                    trend[10].innerHTML= obj.responseJSON[0].trends[10].name;
+                    trend[11].innerHTML= obj.responseJSON[0].trends[11].name;
                     infowindow.open(map,marker10);
                 });
 
                 google.maps.event.addListener(marker11, 'click', function() {
+                    //adding the city title to the pop-up menu
+                    var cityTitle = document.getElementsByClassName('cityTitle');
+                    cityTitle[0].innerHTML=obj.responseJSON[0].locations[0].name;
+
+                    //getting an array of the trend classes
+                    var trend = document.getElementsByClassName('trend');
+
+                    //taking the data received in JSON and adding the trends to the pop-up menu
+                    trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
+                    trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
+                    trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
+                    trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
+                    trend[4].innerHTML= obj.responseJSON[0].trends[4].name;
+                    trend[5].innerHTML= obj.responseJSON[0].trends[5].name;
+                    trend[6].innerHTML= obj.responseJSON[0].trends[6].name;
+                    trend[7].innerHTML= obj.responseJSON[0].trends[7].name;
+                    trend[8].innerHTML= obj.responseJSON[0].trends[8].name;
+                    trend[9].innerHTML= obj.responseJSON[0].trends[9].name;
+                    trend[10].innerHTML= obj.responseJSON[0].trends[10].name;
+                    trend[11].innerHTML= obj.responseJSON[0].trends[11].name;
                     infowindow.open(map,marker11);
                 });
 
                 // close pop-up menu
                 google.maps.event.addListener(map, 'click', function() {
+                    //adding the city title to the pop-up menu
+                    var cityTitle = document.getElementsByClassName('cityTitle');
+                    cityTitle[0].innerHTML=obj.responseJSON[0].locations[0].name;
+
+                    //getting an array of the trend classes
+                    var trend = document.getElementsByClassName('trend');
+
+                    //taking the data received in JSON and adding the trends to the pop-up menu
+                    trend[0].innerHTML= obj.responseJSON[0].trends[0].name;
+                    trend[1].innerHTML= obj.responseJSON[0].trends[1].name;
+                    trend[2].innerHTML= obj.responseJSON[0].trends[2].name;
+                    trend[3].innerHTML= obj.responseJSON[0].trends[3].name;
+                    trend[4].innerHTML= obj.responseJSON[0].trends[4].name;
+                    trend[5].innerHTML= obj.responseJSON[0].trends[5].name;
+                    trend[6].innerHTML= obj.responseJSON[0].trends[6].name;
+                    trend[7].innerHTML= obj.responseJSON[0].trends[7].name;
+                    trend[8].innerHTML= obj.responseJSON[0].trends[8].name;
+                    trend[9].innerHTML= obj.responseJSON[0].trends[9].name;
+                    trend[10].innerHTML= obj.responseJSON[0].trends[10].name;
+                    trend[11].innerHTML= obj.responseJSON[0].trends[11].name;
                     infowindow.close();
                 });
 
                 google.maps.event.addListener(infowindow, 'domready', function() {
-
                     var iwOuter = $('.gm-style-iw');
-
                     var iwBackground = iwOuter.prev();
-
                     iwBackground.children(':nth-child(2)').css({'display' : 'none'});
-
                     iwBackground.children(':nth-child(4)').css({'display' : 'none'});
-
                     iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(0, 0, 0, 0.6) 0px 1px 6px', 'z-index' : '1'});
-
                     var iwCloseBtn = iwOuter.next();
-
                     iwCloseBtn.css({opacity: '1', right: '40px', top: '3px', border: '7px solid white', 'border-radius': '13px', 'box-shadow': '0 0 5px black'});
                 });
             }
