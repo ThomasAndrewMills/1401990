@@ -234,21 +234,20 @@
                             $(".signintwitter").click(function () {
                             //$('#overlay').hide();
                             //$('#mainMenu').hide();
-                                console.log(obj.responseJSON[0].trends[0].name);
-                                console.log(obj.responseJSON[0].trends[1].name);
-                                console.log(obj.responseJSON[0].trends[2].name);
-                                console.log(obj.responseJSON[0].trends[3].name);
-                                console.log(obj.responseJSON[0].trends[4].name);
-                                console.log(obj.responseJSON[0].trends[5].name);
-                                console.log(obj.responseJSON[0].trends[6].name);
-                                console.log(obj.responseJSON[0].trends[7].name);
-                                console.log(obj.responseJSON[0].trends[8].name);
-                                console.log(obj.responseJSON[0].trends[9].name);
-                                console.log(obj.responseJSON[0].trends[10].name);
-                                console.log(obj.responseJSON[0].trends[11].name);
-
                                 var a = obj.responseJSON[0].trends[0].name;
-                                $('.subtitle').append(a);
+                                var b = obj.responseJSON[0].trends[1].name;
+                                var c = obj.responseJSON[0].trends[2].name;
+                                var d = obj.responseJSON[0].trends[3].name;
+                                var e = obj.responseJSON[0].trends[4].name;
+                                var f = obj.responseJSON[0].trends[5].name;
+                                var g = obj.responseJSON[0].trends[6].name;
+                                var h = obj.responseJSON[0].trends[7].name;
+                                var i = obj.responseJSON[0].trends[8].name;
+                                var j = obj.responseJSON[0].trends[9].name;
+                                var k = obj.responseJSON[0].trends[10].name;
+                                var l = obj.responseJSON[0].trends[11].name;
+
+                                $('.trend').append(a);
 
                             });
                         });
