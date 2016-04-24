@@ -169,7 +169,7 @@
                             var j = obj.responseJSON[0].trends[9].name;
                             var k = obj.responseJSON[0].trends[10].name;
                             var l = obj.responseJSON[0].trends[11].name;
-
+console.log(a);
                                 var trend = div.getElementsByClassName('trend');
                                 if(trend[0].innerHTML == 'Trend1')
                                     trend[0].innerHTML=a;
