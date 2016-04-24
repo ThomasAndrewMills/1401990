@@ -170,10 +170,6 @@
                             var k = obj.responseJSON[0].trends[10].name;
                             var l = obj.responseJSON[0].trends[11].name;
 
-                            var divs = document.getElementsByClassName('trendsGroup');
-                            for(var z = 0; z < divs.length; z++) {
-                                var div = divs[z];
-                                if(!div) break;
                                 var trend = div.getElementsByClassName('trend');
                                 if(trend[0].innerHTML == 'Trend1')
                                     trend[0].innerHTML=a;
@@ -199,14 +195,14 @@
                                     trend[10].innerHTML=k;
                                 if(trend[11].innerHTML == 'Trend12')
                                     trend[11].innerHTML=l;
-                            }
+                            };
                             infowindow.open(map, marker1);
                         });
 
 
                         //$('.trend').append(a);
 
-                    
+
 
                     });
 
