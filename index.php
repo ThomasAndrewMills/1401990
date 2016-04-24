@@ -178,7 +178,7 @@
                         for(var z = 0; z < divs.length; z++) {
                             var div = divs[z];
                             if(!div) break;
-                            var span = div.getElementsByClassName('trend');
+                            var trend = div.getElementsByClassName('trend');
                             if(trend[0].innerHTML == 'Trend1')
                                 trend[0].innerHTML=a;
                             if(trend[1].innerHTML == 'Trend2')
