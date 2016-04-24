@@ -73,7 +73,7 @@
 
                 // marker options
                 var marker1 = new google.maps.Marker({
-                    position: google.maps.LatLng(55.864237,-4.251806),
+                    position: city1,
                     map: map,
                     title:"Glasgow"
                 });
