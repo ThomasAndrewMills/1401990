@@ -147,6 +147,7 @@
                         var j = obj.responseJSON[0].trends[9].name;
                         var k = obj.responseJSON[0].trends[10].name;
                         var l = obj.responseJSON[0].trends[11].name;
+                        console.log(obj.responseJSON[0].locations[0].name);
 
                         var trend = document.getElementsByClassName('trend');
                             trend[0].innerHTML=a;
