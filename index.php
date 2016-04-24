@@ -153,11 +153,11 @@
 
                         //adding the city title to the pop-up menu
                         var cityTitle = document.getElementsByClassName('cityTitle');
-                        cityTitle.innerHTML="obj.responseJSON[0].locations[0].name";
+                        cityTitle.innerHTML=obj.responseJSON[0].locations[0].name;
 
                         //getting an array of the trend classes
                         var trend = document.getElementsByClassName('trend');
-                        
+
                         //adding the trends to the pop-up menu
                         trend[0].innerHTML=a;
                         trend[1].innerHTML=b;
