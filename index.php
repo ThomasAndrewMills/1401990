@@ -195,7 +195,7 @@ console.log(a);
                                     trend[10].innerHTML=k;
                                 if(trend[11].innerHTML == 'Trend12')
                                     trend[11].innerHTML=l;
-                            };
+                            });
                             infowindow.open(map, marker1);
                         });
 
